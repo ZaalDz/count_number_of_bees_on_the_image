@@ -61,7 +61,7 @@ def generate_data(input_images_dir, image_save_dir, mask_save_dir, grid_size=Non
 
     crop_img_func = crop_grid_image if grid_size else get_four_cropped_image
 
-    for index, each_image in input_images_dir.iterdir():
+    for index, each_image in enumerate(input_images_dir.iterdir()):
 
         for i, (image, mask) in enumerate(crop_img_func(str(each_image.absolute()), grid_size)):
             name = uuid4().hex
