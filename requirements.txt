@@ -2,5 +2,5 @@ fastai==1.0.55
 requests==2.22.0
 opencv-python==4.1.0.25
 flask==1.1.1
-flask_cors==3.0.8
+flask_cors==3.0.9
 flask_restplus==0.12.1
